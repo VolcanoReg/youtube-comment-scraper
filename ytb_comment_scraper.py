@@ -231,5 +231,4 @@ ytb_video_list = ['https://www.youtube.com/watch?v=-t_uhBBDbA4',
                   'https://www.youtube.com/watch?v=j6dmaPzOBHY',
                   'https://www.youtube.com/watch?v=Yj2efyQV1RI']
 
-for video_link in ytb_video_list:
-    main(video_link)
+main(sys.argv(0))
