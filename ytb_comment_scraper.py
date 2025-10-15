@@ -37,8 +37,8 @@ FILE_NAME = 'ytb_comments.csv'
 SORT_BY_POPULAR = 0
 # default recent
 SORT_BY_RECENT = 1
-# set comment limit
-COMMENT_LIMIT = 100
+# set comment limit (1 mil)
+COMMENT_LIMIT = 1000000000
 
 YT_CFG_RE = r'ytcfg\.set\s*\(\s*({.+?})\s*\)\s*;'
 YT_INITIAL_DATA_RE = r'(?:window\s*\[\s*["\']ytInitialData["\']\s*\]|ytInitialData)\s*=\s*({.+?})\s*;\s*(?:var\s+meta|</script|\n)'
