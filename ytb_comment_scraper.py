@@ -34,9 +34,9 @@ FILE_NAME = 'ytb_comments.csv'
 
 # set parameters
 # filter comments by popularity or recent, 0:False, 1:True
-SORT_BY_POPULAR = 0
+SORT_BY_POPULAR = 1
 # default recent
-SORT_BY_RECENT = 1
+SORT_BY_RECENT = 0
 # set comment limit (1 mil)
 COMMENT_LIMIT = 1000000000
 
@@ -159,7 +159,7 @@ def main(url):
 
         start_time = time.time()
 
-        for comment in download_comments(youtube_url):
+        for comment in download_comments(youtube_url,sort_by=SORT_BY_RECENT):
 
             df_comment = df_comment.append(comment, ignore_index=True)
 
