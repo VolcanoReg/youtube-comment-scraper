@@ -18,6 +18,7 @@ import os
 import sys
 import re
 import time
+import traceback
 
 import requests
 
@@ -183,7 +184,9 @@ def main(url):
 
     except Exception as e:
         print('Error:', str(e))
+        traceback.print_exc()
         sys.exit(1)
+
 
     # dumping youtube comments
 
